@@ -1,0 +1,7 @@
+require("fitchner/remap")
+require("fitchner/packer")
+require("fitchner/set")
+require("fitchner/telescope")
+require("fitchner/whichkey")
+require("fitchner/colors")
+require("fitchner/gitsigns")
