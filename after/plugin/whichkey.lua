@@ -16,3 +16,8 @@ wk.register({
         -- r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File"}, -- additional options for creating the keymap
         h = { name = "Git operations" },
 }, { prefix = "<leader>" })
+
+wk.register({
+        -- r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File"}, -- additional options for creating the keymap
+        w = { name = "Window operations" },
+}, { prefix = "<leader>" })
