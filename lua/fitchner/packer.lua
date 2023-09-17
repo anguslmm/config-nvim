@@ -51,6 +51,7 @@ return require('packer').startup(function(use)
 
     -- Post-install/update hook with neovim command
     use { 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate' }}
+    use { "nvim-treesitter/playground" }
 
     -- Post-install/update hook with call of vimscript function with argument
     -- use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
@@ -92,4 +93,28 @@ return require('packer').startup(function(use)
         end
     }
 
+    use { 'mbbill/undotree' }
+
+      use {
+	  'VonHeikemen/lsp-zero.nvim',
+	  branch = 'v1.x',
+	  requires = {
+		  -- LSP Support
+		  {'neovim/nvim-lspconfig'},
+		  {'williamboman/mason.nvim'},
+		  {'williamboman/mason-lspconfig.nvim'},
+
+		  -- Autocompletion
+		  {'hrsh7th/nvim-cmp'},
+		  {'hrsh7th/cmp-buffer'},
+		  {'hrsh7th/cmp-path'},
+		  {'saadparwaiz1/cmp_luasnip'},
+		  {'hrsh7th/cmp-nvim-lsp'},
+		  {'hrsh7th/cmp-nvim-lua'},
+
+		  -- Snippets
+		  {'L3MON4D3/LuaSnip'},
+		  {'rafamadriz/friendly-snippets'},
+	  }
+  }
 end)
