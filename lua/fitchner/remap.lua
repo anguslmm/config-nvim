@@ -11,4 +11,4 @@ vim.keymap.set("n", "<leader>ws", "<cmd>split<CR>", {desc = "Split window with a
 vim.keymap.set("n", "<leader>wv", "<cmd>vsplit<CR>", {desc = "Split window with a vertical line"})
 vim.keymap.set("n", "<leader>wc", "<cmd>close<CR>", {desc = "Close the curent window"})
 vim.keymap.set("n", "<leader>wc", "<cmd>close<CR>", {desc = "Close the curent window"})
-vim.keymap.set("n", "<leader>w=", "<cmd>windcmd =<CR>", {desc = "Equalize window sizes"})
+vim.keymap.set("n", "<leader>w=", "<cmd>wincmd =<CR>", {desc = "Equalize window sizes"})

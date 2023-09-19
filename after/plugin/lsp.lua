@@ -51,7 +51,19 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+lsp.skip_server_setup({'rust_analyzer'})
+
 lsp.setup()
+
+local rust_tools = require('rust-tools')
+
+rust_tools.setup({
+  server = {
+    on_attach = function(_, bufnr)
+      vim.keymap.set('n', '<leader>ca', rust_tools.hover_actions.hover_actions, {buffer = bufnr})
+    end
+  }
+})
 
 vim.diagnostic.config({
     virtual_text = true

@@ -119,4 +119,6 @@ return require('packer').startup(function(use)
     }
 
     use { "akinsho/toggleterm.nvim", tag="*" }
+    use { "simrat39/rust-tools.nvim" }
+    use { "ThePrimeagen/vim-be-good" }
 end)
