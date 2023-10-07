@@ -84,6 +84,7 @@ return require('packer').startup(function(use)
     }
     -- Colors
     use { "ellisonleao/gruvbox.nvim" }
+    use { "sainnhe/gruvbox-material" }
 
     -- Show shortcuts
     -- Lua

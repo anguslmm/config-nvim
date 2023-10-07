@@ -1,7 +1,6 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, {desc = "Show netrw"})
 
-
 -- Window operations
 vim.keymap.set("n", "<leader>wh", "<cmd>wincmd h<CR>", {desc = "Switch window to the left"})
 vim.keymap.set("n", "<leader>wj", "<cmd>wincmd j<CR>", {desc = "Switch window down"})
