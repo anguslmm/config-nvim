@@ -3,16 +3,19 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   -- Replace the language servers listed here
   -- with the ones you want to install
-  ensure_installed = {'pyright', 'rust_analyzer'},
+  ensure_installed = {'clangd', 'pyright', 'rust_analyzer'},
   handlers = {
     lsp.default_setup,
   }
 })
+local lspconfig = require('lspconfig')
+lspconfig.clangd.setup {}
 
 lsp.preset("recommended")
 
 lsp.ensure_installed({
 --  'tsserver',
+  'clangd',
   'rust_analyzer',
 })
 
