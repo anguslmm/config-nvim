@@ -10,6 +10,12 @@ return require('packer').startup(function(use)
     -- Simple plugins can be specified as strings
     use 'rstacruz/vim-closer'
 
+	use { 'SmiteshP/nvim-navic' }
+
+	use { 'ray-x/lsp_signature.nvim' }
+
+	use { 'hrsh7th/vim-vsnip' }
+
     -- Lazy loading:
     -- Load on specific commands
     -- use {'tpope/vim-dispatch', opt = true, cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}
